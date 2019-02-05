@@ -1,7 +1,7 @@
 # Underground-Music-Project
 Collecting and analyzing data scraped from underground music blog nodata.tv
 
-1. run Scrape&CreateDB-Development.ipynb to scrape 1 page of albums into a mongo db
+1. run Scrape&CreateDB-Development.ipynb (or scrape&createdb.py) to scrape 1 page of albums into a mongo db
 2. run app.py to launch a Flask app
 3. routes: 
 ```
