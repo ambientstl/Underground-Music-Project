@@ -3,7 +3,7 @@ Collecting and analyzing data scraped from underground music blog nodata.tv
 
 1. run CreateDB.py to scrape 2,000 albums into a mySQL database
       - to scrape less albums (and cut down on scraping time), reduce the range on line 41 in CreateDB.py
-2. create config.py with "mySQLpassword = <your mySQL password"
+2. create config.py with "mySQLpassword = <your mySQL password>"
 3. run app.py, and visit http://127.0.0.1:5000/
 3. routes: 
       - note: graphs are a work in progress
