@@ -1,0 +1,112 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>U.M.A.</title>
+  </head>
+  <body> -->
+    <!-- Navigation Bar -->
+    <!-- <header>
+        <nav class="d-flex navbar navbar-light navbar-expand-md fixed-top bg-light">
+            <a class="navbar-brand" href="index.html">Underground Music Analysis</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_menu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbar_menu">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-auto">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item ml-auto">
+                  <a class="nav-link" href="#">Genres</a>
+                </li>
+                <li class="nav-item ml-auto">
+                  <a class="nav-link" href="#">Genre Associations</a>
+                </li>
+                <li class="nav-item ml-auto">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      </header> -->
+
+      {% extends "base.html" %}
+
+      {% block content %}
+      <main class="pt-5">
+        <div class="container mt-5">
+          <h1 class="display-3">Genre Analysis</h1>
+
+          <!-- Name & Summary -->
+          <h1 class="pt-3">{{ Data.Name }}</h1>
+          <div class="row">
+            <blockquote class="blockquote px-5 pt-5 pb-3 col-md-10 offset-md-1 bg-warning">
+              {{ Data.Description }}
+              <footer class="blockquote-footer text-right">
+                <cite><a href="#">Wikipedia</a></cite>
+              </footer>
+            </blockquote>
+          </div>
+
+          <!-- Top Associated Genres Graph -->
+          <div id="associated_genres">
+            <div class="mb-5 display-2 justify-content-center d-flex">(TOP ASSOCIATED GENRES GRAPH)</div>
+          </div>
+
+          <!-- Random Album Covers -->
+          <div class="row align-items-center" id="album_covers">
+            <div class="col-6 col-md-3">
+              <img src="{{ Data.Covers[0] }}" class="image-fluid my-3" width="100%" height="auto">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="{{ Data.Covers[1] }}" class="image-fluid my-3" width="100%" height="auto">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="{{ Data.Covers[2] }}" class="image-fluid my-3" width="100%" height="auto">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="{{ Data.Covers[3] }}" class="image-fluid my-3" width="100%" height="auto">            
+            </div>
+          </div>
+
+          <!-- Top Labels -->
+          <div class="row py-5">
+            <div class="col-6">
+              <h4 class="offset-1 offset-md-2">Top Labels:</h4>
+              <ul class="list-unstyled">
+                <li class="offset-2 offset-md-3">{{ Data.Labels[0]["Label"] }} - {{ Data.Labels[0]["Count"] }}</li>
+                <li class="offset-2 offset-md-3">{{ Data.Labels[1]["Label"] }} - {{ Data.Labels[1]["Count"] }}</li>
+                <li class="offset-2 offset-md-3">{{ Data.Labels[2]["Label"] }} - {{ Data.Labels[2]["Count"] }}</li>
+                <li class="offset-2 offset-md-3">{{ Data.Labels[3]["Label"] }} - {{ Data.Labels[3]["Count"] }}</li>
+              </ul>
+            </div>
+            <!-- Top Artists -->
+            <div class="col-6">
+              <h4 class="offset-1 offset-md-2">Top Artists:</h4>
+              <ul class="list-unstyled">
+                  <li class="offset-2 offset-md-3">{{ Data.Artists[0]["Artist"] }} - {{ Data.Artists[0]["Count"] }}</li>
+                  <li class="offset-2 offset-md-3">{{ Data.Artists[1]["Artist"] }} - {{ Data.Artists[1]["Count"] }}</li>
+                  <li class="offset-2 offset-md-3">{{ Data.Artists[2]["Artist"] }} - {{ Data.Artists[2]["Count"] }}</li>
+                  <li class="offset-2 offset-md-3">{{ Data.Artists[3]["Artist"] }} - {{ Data.Artists[3]["Count"] }}</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Popularity by Year Graph -->
+          <div id="genre_popularity">
+            <div class="mb-5 display-2 justify-content-center d-flex">(GENRE POPULARITY BY YEAR)</div>
+          </div>
+        </div>
+      </main>
+
+      {% endblock %}
+    <!-- Optional JavaScript -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html> -->
