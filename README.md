@@ -6,7 +6,6 @@ Collecting and analyzing data scraped from underground music blog nodata.tv
 2. create config.py and set "mySQLpassword" to your root password
 3. run app.py, and visit http://127.0.0.1:5000/
 3. routes: 
-      - note: graphs are a work in progress
 ```
 * / -home page: album count graph and genre summaries
 * /genres -list of genres
